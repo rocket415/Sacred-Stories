@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sacred Stories</title>
+<style>
+:root{
+  --bg:#fafafa;
+  --text:#111111;
+  --muted:#5f5f5f;
+  --border:#dddddd;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+}
+.container{
+  max-width:960px;
+  margin:0 auto;
+  padding:28px 18px 36px;
+}
+.hero,
+.section{
+  display:grid;
+  row-gap:12px;
+}
+.section{
+  margin-top:22px;
+}
+.section.tight{
+  margin-top:14px;
+}
+h1,h2,h3,p,ul,li{
+  margin:0;
+}
+h1{
+  font-size:40px;
+  line-height:1.1;
+  letter-spacing:-0.02em;
+}
+h2{
+  font-size:22px;
+  line-height:1.2;
+}
+h3{
+  font-size:18px;
+  line-height:1.2;
+}
+p{
+  font-size:17px;
+  line-height:1.55;
+  color:#333;
+}
+.subtle{
+  color:var(--muted);
+}
+.actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  padding-top:2px;
+}
+.button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:44px;
+  padding:12px 18px;
+  border-radius:8px;
+  text-decoration:none;
+  font-size:15px;
+  line-height:1.2;
+  transition:opacity .15s ease;
+  border:none;
+  cursor:pointer;
+}
+.button:hover{opacity:.9}
+.button.primary{
+  background:#111;
+  color:#fff;
+}
+.button.secondary{
+  background:#ededed;
+  color:#111;
+}
+.pricing{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  align-items:stretch;
+  margin-top:4px;
+}
+.card{
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:16px;
+  background:var(--card);
+  display:grid;
+  grid-template-rows:auto auto 1fr;
+  row-gap:12px;
+}
+.card-head{
+  display:grid;
+  row-gap:6px;
+  text-align:center;
+}
+.price{
+  font-size:20px;
+  line-height:1.1;
+  font-weight:600;
+  color:#111;
+}
+.features{
+  list-style:none;
+  padding:0;
+  display:grid;
+  row-gap:8px;
+}
+.features li{
+  font-size:15px;
+  line-height:1.45;
+  color:#333;
+  position:relative;
+  padding-left:14px;
+}
+.features li::before{
+  content:"•";
+  position:absolute;
+  left:0;
+  top:0;
+  color:#666;
+}
+a{
+  color:inherit;
+}
+@media (max-width:900px){
+  .pricing{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="hero">
+    <h1>Preserve Their Story. Forever.</h1>
+    <p class="subtle">A new family heirloom: deeply personal, detailed, recorded conversation with someone you love — captured in their own voice, for generations to come.</p>
+    <div class="actions">
+      <a href="https://calendly.com/daniel-e-riley/new-meeting" target="_blank" rel="noopener noreferrer" class="button primary">Book a 15-min Intro Call</a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daniel.e.riley@gmail.com&su=Sacred%20Stories%20Inquiry&body=Hi%20Dan,%0A%0AI%E2%80%99m%20interested%20in%20learning%20more%20about%20Sacred%20Stories.%0A%0AThanks," target="_blank" rel="noopener noreferrer" class="button secondary">Email Contact</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <p>Every individual has meaningful stories and a fascinating history that lives inside of them. When their voice is gone, their stories go with them.</p>
+    <p>Sacred Stories exists to preserve them.</p>
+  </div>
+
+  <div class="section tight">
+    <p>I’m a <a href="https://linktr.ee/keeptalkingpodcast" target="_blank" rel="noopener noreferrer">full-time</a> <a href="https://linktr.ee/AONYpod" target="_blank" rel="noopener noreferrer">podcaster</a> who has conducted hundreds of long-form interviews over more than 10 years.</p>
+    <p>Using a professional setup, I record high-fidelity, one-on-one conversations with parents, grandparents, and loved ones — capturing their lives in a way that feels natural and real.</p>
+    <p>The result is a permanent archive your family can return to — not just as memories, but as a voice.</p>
+  </div>
+
+  <div class="section">
+    <h2>Who This Is For</h2>
+    <p>For people who want to preserve the story of someone they love — a parent, grandparent, or family member — while they’re still here to tell it.</p>
+  </div>
+
+  <div class="section">
+    <h2>Why It Matters</h2>
+    <p>Photos fade. Details blur. Stories disappear.</p>
+    <p>This is a way to hold onto what matters — in the most human form possible.</p>
+  </div>
+
+  <div class="section">
+    <h2>Offerings</h2>
+    <div class="pricing">
+      <div class="card">
+        <div class="card-head">
+          <h3>Essential</h3>
+          <div class="price">$3,000</div>
+        </div>
+        <ul class="features">
+          <li>Pre-interview calls and texts for prep and logistics as needed</li>
+          <li>Up to 5 hours of recorded interviews</li>
+          <li>Edited audio files, likely delivered via private YouTube link, with timestamps for topic organization</li>
+          <li>In-person getting-to-know-you-and-the-project chats before interviews begin</li>
+          <li>Review of family docs, pictures, stories, and articles as needed</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Extended</h3>
+          <div class="price">$5,000</div>
+        </div>
+        <ul class="features">
+          <li>Everything in Essential</li>
+          <li>Up to 10 hours of recorded interviews</li>
+          <li>Additional prep, follow-up, and shaping conversations as needed</li>
+          <li>Deeper organization of themes, chapters, and family storylines</li>
+          <li>More comprehensive coverage across different life periods and relationships</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Legacy</h3>
+          <div class="price">$10,000</div>
+        </div>
+        <ul class="features">
+          <li>Everything in Extended</li>
+          <li>Up to 20 hours of recorded interviews</li>
+          <li>Full life-story coverage across multiple sessions</li>
+          <li>Expanded review of family materials, history, and context</li>
+          <li>Most complete archival version for future generations</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  
+
+</div>
+</body>
+</html>
