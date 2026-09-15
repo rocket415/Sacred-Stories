@@ -12,7 +12,7 @@ html,body{margin:0;background:#fff;color:var(--ink);font-family:Georgia,'Times N
 .page{position:relative;width:min(100%,1024px);margin:0 auto}
 .design{display:block;width:100%;height:auto}
 .form-live{position:absolute;left:73.35%;top:10.70%;width:21.75%;height:12.2%;z-index:10;font-family:Georgia,'Times New Roman',serif}
-.form-live input{display:block;width:100%;height:34px;margin:0 0 7px;padding:7px 11px;border:1px solid #c7d0d5;border-radius:3px;background:#fff;color:var(--ink);font:13px Georgia,'Times New Roman',serif;outline:none}
+.form-live input{display:block;width:100%;height:34px;margin:0 0 7px;padding:7px 11px;border:1px solid #c7d0d5;border-radius:3px;background:#fff;color:var(--ink);font:13px Georgia,'Times New Roman',serif;outline:none}.form-live input[name=interviewee]{font-size:11.5px}
 .form-live input:focus{border-color:#0b5b6c;box-shadow:0 0 0 2px rgba(11,91,108,.12)}
 .form-live button{width:100%;height:42px;margin-top:3px;border:0;border-radius:3px;background:var(--deep);color:#fff;font:14px Arial,sans-serif;cursor:pointer}
 .form-live button:hover{filter:brightness(1.08)}
@@ -30,11 +30,11 @@ html,body{margin:0;background:#fff;color:var(--ink);font-family:Georgia,'Times N
 
 .bottom{position:absolute;left:0;top:78.45%;width:100%;height:21.55%;z-index:8;background:
 linear-gradient(90deg,rgba(255,244,228,.82) 0%,rgba(255,244,228,.38) 38%,rgba(255,244,228,.03) 64%),
-url('https://images.pexels.com/photos/11934558/pexels-photo-11934558.jpeg?cs=srgb&fm=jpg&w=1800') center 52%/cover no-repeat;}
-.bottom-copy{position:absolute;left:6.5%;top:29%;max-width:410px}
-.bottom h2{font-size:36px;font-weight:400;line-height:1.05;margin:0 0 14px}
+url('https://images.unsplash.com/photo-1758262275274-9e4bb2ba6a04?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=85&w=2400') center 52%/cover no-repeat;}
+.bottom-copy{position:absolute;left:6.5%;top:34%;max-width:460px}
+.bottom h2{font-size:38px;font-weight:400;line-height:1.05;margin:0;text-shadow:0 1px 10px rgba(255,255,255,.55)}
 .bottom .cta{display:inline-flex;align-items:center;gap:20px;background:var(--deep);color:#fff;text-decoration:none;border-radius:3px;padding:13px 25px;font:14px Arial,sans-serif}
-.credit{position:absolute;right:8px;bottom:6px;color:#fff;background:#0007;padding:3px 6px;border-radius:2px;font:9px Arial,sans-serif;text-decoration:none}
+
 
 @media(max-width:700px){
  .page{min-width:700px;transform-origin:top left;transform:scale(calc(100vw / 700));margin-bottom:calc((1536px + 0px) * (100vw / 700) - 1536px)}
@@ -52,7 +52,7 @@ url('https://images.pexels.com/photos/11934558/pexels-photo-11934558.jpeg?cs=srg
   <input type="hidden" name="_next" id="nextUrl" value="">
   <input name="name" autocomplete="name" placeholder="Your name" aria-label="Your name" required>
   <input type="email" name="email" autocomplete="email" placeholder="Your email" aria-label="Your email" required>
-  <input name="interviewee" placeholder="Who would you like to have interviewed?" aria-label="Who would you like to have interviewed?" required>
+  <input name="interviewee" placeholder="Who would you like to be interviewed?" aria-label="Who would you like to be interviewed?" required>
   <button type="submit">Start a Conversation&nbsp;&nbsp; →</button>
   <div class="form-status" id="formStatus"></div>
 </form>
@@ -71,12 +71,10 @@ url('https://images.pexels.com/photos/11934558/pexels-photo-11934558.jpeg?cs=srg
   <div class="quote">“In 1910, my dad said that life was totally different...”</div>
 </section>
 
-<section class="bottom" aria-label="Manhattan at sunset">
+<section class="bottom" aria-label="Lower Manhattan at sunset">
   <div class="bottom-copy">
     <h2>Give the gift of their story.</h2>
-    <a class="cta" href="#leadForm">Start a Conversation&nbsp;&nbsp; →</a>
   </div>
-  <a class="credit" href="https://www.pexels.com/photo/11934558/" target="_blank" rel="noopener">Photo: Sahil Raut / Pexels</a>
 </section>
 </main>
 
