@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,viewport-fit=cover">
 <title>Sacred Stories | Life Stories, Preserved</title>
 <meta name="description" content="In-person, professionally recorded interviews that preserve a lifetime of stories for family and future generations.">
 <style>
@@ -37,6 +37,89 @@ html,body{margin:0;background:#fff;color:var(--ink);font-family:Georgia,'Times N
 @media(max-width:700px){
  .page{min-width:700px;transform-origin:top left;transform:scale(calc(100vw / 700));margin-bottom:calc((1536px + 0px) * (100vw / 700) - 1536px)}
 }
+
+/* Mobile optimization: desktop design remains unchanged. */
+@media (max-width:700px){
+  html,body{width:100%;overflow-x:hidden;background:#fff}
+  body{margin:0}
+  .stage{
+    width:100%;
+    max-width:none;
+    margin:0;
+    /* Preserve the exact desktop composition while scaling it cleanly to the phone width. */
+    aspect-ratio:auto;
+    overflow:hidden;
+  }
+  .guide{
+    display:block;
+    width:100%;
+    height:auto;
+    max-width:none;
+  }
+
+  /* Keep the live form precisely registered over the scaled design. */
+  .form{
+    left:69.65%;
+    top:5.82%;
+    width:20.45%;
+    height:27.1%;
+  }
+  .form input{
+    min-height:0;
+    padding-left:1.1vw;
+    padding-right:1.1vw;
+    font-size:clamp(5.5px,1.55vw,10.5px);
+  }
+  .form .who{font-size:clamp(5px,1.35vw,9.5px)}
+  .form button{touch-action:manipulation}
+  .status{font-size:clamp(5.5px,1.5vw,10px)}
+
+  /* One responsive, touch-friendly audio player aligned to the original artwork. */
+  .audio-clean{
+    left:30.7%;
+    top:43.55%;
+    width:62.4%;
+    height:9.6%;
+  }
+  .audio-clean .story-label{
+    font-size:clamp(4px,1.05vw,8px);
+    letter-spacing:.18em;
+  }
+  .audio-clean .story-title{
+    font-size:clamp(10px,2.8vw,22px);
+  }
+  .audio-clean .controls{
+    gap:1.4vw;
+    height:auto;
+  }
+  .audio-clean .play{
+    width:clamp(24px,6.2vw,44px);
+    height:clamp(24px,6.2vw,44px);
+    flex-basis:clamp(24px,6.2vw,44px);
+    font-size:clamp(10px,2.5vw,18px);
+    touch-action:manipulation;
+  }
+  .audio-clean .seek{
+    height:18px;
+    touch-action:pan-x;
+  }
+  .audio-clean .audio-time{
+    font-size:clamp(5px,1.35vw,10px);
+  }
+  .audio-clean .quote{
+    font-size:clamp(6px,1.6vw,12px);
+  }
+  .success{padding:1.5vw}
+  .success-check{
+    width:clamp(20px,5vw,34px);
+    height:clamp(20px,5vw,34px);
+    font-size:clamp(11px,2.6vw,18px);
+    margin-bottom:.8vw;
+  }
+  .success-title{font-size:clamp(10px,2.7vw,20px)}
+  .success-copy{font-size:clamp(5.5px,1.45vw,10px)}
+}
+
 </style>
 </head>
 <body>
